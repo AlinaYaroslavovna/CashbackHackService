@@ -45,4 +45,3 @@ build/
 .idea/workspace.xml
 .kotlin/
 .vscode/
-gradle/wrapper/gradle-wrapper.jar
