@@ -18,3 +18,14 @@ dependencies {
 test {
     useTestNG()
 }
+// build.gradle (только измененные/добавленные части)
+dependencies {
+    testImplementation 'junit:junit:4.13' // Добавлено
+}
+
+test {
+    useJUnit() // Добавлено
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

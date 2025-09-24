@@ -1,5 +1,5 @@
 // src/test/java/ru/netology/service/CashbackHackServiceTestNG.java
-package ru.netoligy.services;
+package ru.netology.services;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
