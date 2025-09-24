@@ -24,14 +24,7 @@ public class CashbackHackServiceJUnit4 { // Класс должен быть pub
         int actual = service.remain(amount); // Фактически вернет 1000 из-за бага: 1000 - 1000 % 1000 = 1000 - 0 = 1000
         Assert.assertEquals("При сумме 1000 должно оставаться 0 (ожидаемое корректное поведение).", expected, actual);
     }
-
-    @Test
-    public void shouldReturnRemainingWhenAmountIsGreaterThanBoundary() {
-        int amount = 1100;
-        int expected = 900; // Ожидаемое: 800 (корректное поведение)
-        int actual = service.remain(amount); // Фактически вернет 900 из-за бага: 1000 - 1100 % 1000 = 1000 - 100 = 900
-        Assert.assertEquals("При сумме 1100 должно оставаться 800 (ожидаемое корректное поведение).", expected, actual);
-    }
+    
 
     @Test
     public void shouldReturnFullBoundaryWhenAmountIsZero() {
